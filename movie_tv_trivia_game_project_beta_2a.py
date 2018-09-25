@@ -159,9 +159,6 @@ quotes_answers = [
      Quotes(quote_answers[24], "Casablanca"),  
     ]
 
-
-   
-
 quotes_in_quiz = random.sample(quotes, 8)
 
 
@@ -174,7 +171,7 @@ def run_quiz(quotes):
           answer = input(quote.answers)
           if answer == quote.answers:
                score += 1
-     print("Game completed " + name + "...you got", score, "out of", len(quotes), "correct.\n")
+     print(f"Game completed {name}...you got", score, "out of", len(quotes), "correct.\n")
 
 run_quiz(quotes)
 
